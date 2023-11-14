@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the UsersModel.fromMap constructor from Class UsersModel from the user_models library, for the Dart programming language.">
+  <title>UsersModel.fromMap constructor - UsersModel - user_models library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">rentv_admin_pannel</a></li>
+    <li><a href="../../models_user_models/models_user_models-library.html">user_models</a></li>
+    <li><a href="../../models_user_models/UsersModel-class.html">UsersModel</a></li>
+    <li class="self-crumb">UsersModel.fromMap factory constructor</li>
+  </ol>
+  <div class="self-name">UsersModel.fromMap</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="models_user_models&#47;UsersModel-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-constructor">UsersModel.fromMap</span> constructor 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">UsersModel.fromMap</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="fromMap-param-map"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span></span> <span class="parameter-name">map</span></span></li>
+</ol>)
+    </section>
+
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">factory UsersModel.fromMap(Map&lt;String, dynamic&gt; map) {
+  return UsersModel(
+    id: map[&#39;id&#39;]?.toInt() ?? 0,
+    code: map[&#39;code&#39;] ?? &#39;&#39;,
+    dateCreated: map[&#39;dateCreated&#39;]?.toInt() ?? 0,
+    createdBy: map[&#39;createdBy&#39;] ?? &#39;&#39;,
+    dateModified: map[&#39;dateModified&#39;]?.toInt() ?? 0,
+    modifiedBy: map[&#39;modifiedBy&#39;] ?? &#39;&#39;,
+    jsondata: Json.fromMap(map[&#39;json&#39;]),
+    status: map[&#39;status&#39;] ?? false,
+    name: map[&#39;name&#39;],
+    email: map[&#39;email&#39;],
+    age: map[&#39;age&#39;]?.toInt(),
+    mobileIsoCode: map[&#39;mobileIsoCode&#39;],
+    mobileNo: map[&#39;mobileNo&#39;],
+    dlLinks: map[&#39;dlLinks&#39;],
+    ipAddress: map[&#39;ipAddress&#39;],
+    fcm: map[&#39;fcm&#39;],
+    deviceId: map[&#39;deviceId&#39;],
+    profilePicUrl: map[&#39;profilePicUrl&#39;],
+    token: map[&#39;token&#39;],
+    blackListUsers: map[&#39;blackListUsers&#39;],
+    date: map[&#39;date&#39;],
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">rentv_admin_pannel</a></li>
+    <li><a href="../../models_user_models/models_user_models-library.html">user_models</a></li>
+    <li><a href="../../models_user_models/UsersModel-class.html">UsersModel</a></li>
+    <li class="self-crumb">UsersModel.fromMap factory constructor</li>
+</ol>
+
+
+    <h5>UsersModel class</h5>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    rentv_admin_pannel
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
